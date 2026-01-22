@@ -12,6 +12,7 @@ import NotFound from "./pages/NotFound";
 import RegisterStudent from "./pages/RegisterStudent";
 import UpdateStudent from "./pages/UpdateStudent";
 import ViewStudent from "./pages/ViewStudent";
+import Carousel from "./pages/Carousel";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -35,9 +36,11 @@ function App() {
 
         {/* 404 Page */}
         <Route path="*" element={<NotFound />} />
-      
       </Routes>
-        <Footer />
+      <br />
+      
+      <Carousel />
+      <Footer />
     </BrowserRouter>
   );
 }
